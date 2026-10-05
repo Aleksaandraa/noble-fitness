@@ -1,0 +1,561 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+/*Navbar*/
+.navbar {
+  font-size: 18px;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.146) 0px 5px 15px;
+  padding: 20px 30px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: sans-serif;
+}
+.navbar-brand{
+  font-weight: bold;
+font-family: sans-serif;
+}
+.img-logo{
+  width: 70px;
+  border-radius: 100px;
+}
+.navbar .container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .navbar-nav {
+  display: flex;
+  gap: 20px; 
+}
+.main-nav {
+  list-style: none;
+  display: flex;
+}
+.main-nav li {
+  margin: 0 15px;
+}
+.nav-links {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+.nav-links:hover {
+  color: black;
+}
+.nav-item {
+  color: black;
+}
+/*News Section*/
+.news-section {
+    width: 100%;
+    padding: 100px 7%;
+    background: #f7f9fb;
+}
+.news-header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 60px;
+}
+.news-subtitle {
+    display: block;
+    color: #285e98;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+.news-tittle {
+    margin: 0;
+    color:#257ede;
+    font-size: 48px;
+    font-weight: 700;
+}
+.news-intro {
+    margin: 20px auto 0;
+    max-width: 600px;
+    color: #6b7d8c;
+    font-size: 15px;
+    line-height: 1.7;
+}
+.news-cards {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.news-card {
+    background: white;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(16, 47, 77, 0.08);
+    transition: 0.35s ease;
+}
+.news-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 40px rgba(16, 47, 77, 0.15);
+}
+.news-image-wrapper {
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+.news-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: 0.5s ease;
+}
+.news-card:hover .news-card-img {
+    transform: scale(1.06);
+}
+.news-category {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+
+    background: #257ede;
+    color: white;
+
+    padding: 8px 13px;
+
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.news-card-body {
+    padding: 28px;
+}
+
+.news-date {
+    color: #8999a7;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.news-card-title {
+    color: #257ede;
+    font-size: 22px;
+    line-height: 1.3;
+    margin: 12px 0;
+}
+
+.news-card-text {
+    color: #6b7d8c;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 22px;
+}
+.news-read-more {
+    color: #257ede;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    transition: 0.3s ease;
+}
+.news-read-more span {
+    margin-left: 7px;
+    transition: 0.3s ease;
+}
+.news-read-more:hover {
+    color: #257ede;
+}
+.news-read-more:hover span {
+    margin-left: 12px;
+}
+.journal-section {
+    max-width: 1200px;
+    margin: 130px auto 0;
+}
+.journal-heading {
+    text-align: center;
+    margin-bottom: 55px;
+}
+.journal-subtitle {
+    color: #257ede;
+
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+.journal-heading h2 {
+    color: #257ede;
+
+    font-size: 48px;
+    line-height: 1.15;
+
+    margin: 15px 0 20px;
+}
+.journal-heading p {
+    max-width: 650px;
+    margin: auto;
+
+    color: #6b7d8c;
+
+    font-size: 15px;
+    line-height: 1.7;
+}
+.journal-feature {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 450px;
+    background: #257ede;
+    overflow: hidden;
+}
+.journal-image {
+    height: 100%;
+    overflow: hidden;
+}
+.journal-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: 0.6s ease;
+}
+
+.journal-feature:hover .journal-image img {
+    transform: scale(1.05);
+}
+.journal-content {
+    padding: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.journal-category {
+    color: #257ede;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.journal-content h3 {
+    color: white;
+    font-size: 38px;
+    line-height: 1.15;
+    margin: 0 0 20px;
+}
+
+.journal-content p {
+    max-width: 500px;
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 15px;
+    line-height: 1.8;
+    margin: 0;
+}
+.journal-details {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 25px 0;
+    color: #8da9bf;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+}
+
+.journal-details .dot {
+    color: #257ede;
+}
+.journal-button {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    transition: 0.3s ease;
+}
+.journal-button span {
+    margin-left: 8px;
+    transition: 0.3s ease;
+}
+
+.journal-button:hover {
+    color: #7fa8ca;
+}
+
+.journal-button:hover span {
+    margin-left: 13px;
+}
+.fitness-topics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-bottom: 1px solid #d8e0e6;
+    border-left: 1px solid #d8e0e6;
+    border-right: 1px solid #d8e0e6;
+}
+.fitness-topic {
+    min-height: 180px;
+    padding: 30px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    border-right: 1px solid #d8e0e6;
+    background: white;
+    transition: 0.3s ease;
+}
+.fitness-topic:last-child {
+    border-right: none;
+}
+.fitness-topic:hover {
+    background: #f9fbfd;
+}
+.topic-number {
+    color: #257ede;
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 3px;
+}
+.topic-content {
+    flex: 1;
+}
+
+.topic-label {
+    color: #257ede;
+    font-size: 9px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.topic-content h4 {
+    color: #257ede;
+    font-size: 19px;
+    margin: 8px 0;
+}
+.topic-content p {
+    color: #72818d;
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0;
+}
+.topic-arrow {
+    color: #257ede;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.3s ease;
+}
+.fitness-topic:hover .topic-arrow {
+    transform: translateX(5px);
+}
+/*Footer*/
+footer {
+    background: #222;
+    color: #fff;
+    padding: 40px 0;
+
+}
+.footer-tittle{
+    font-weight: bold;
+    color: #257ede;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 50px;
+    padding-bottom: 80px;
+}
+
+.footer-section {
+    width: 25%;
+    padding: 10px;
+}
+
+.footer-section h3{
+    color: rgb(16, 16, 16);
+}
+
+.footer-section p,
+.footer-section ul {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+
+}
+
+.footer-section ul li a {
+    color:#102f4d;
+    text-decoration: none;
+    transition: 0.3s;
+    font-weight: bold;
+
+}
+
+.footer-section ul li a:hover {
+    color: rgba(63, 110, 146, 0.863)
+}
+
+.social-icons a {
+    display: inline-block;
+    color: #fff;
+    margin-right: 10px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #f1c40f;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    border-top: 1px solid #444;
+}
+
+.footer-par2 {
+    margin-top: 10px;
+}
+
+.links {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .navbar-toggle {
+      display: block;
+      position: absolute;
+
+      right: 20px;
+  }
+  .main-nav {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: white;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 10px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease-in-out;
+  }
+
+  .main-nav.show {
+      max-height: 400px; 
+  }
+
+  .main-nav li {
+      text-align: center;
+      padding: 15px 0;
+      width: 100%;
+  }
+
+  .logo {
+      font-size:16px;
+      margin: 0;
+  }
+   .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding-top: 30px;
+    width: 100%;
+  }
+  .footer-section{
+    width: 100%;
+    text-align: center;
+}
+}
+@media (max-width: 992px) {
+    .news-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .news-card:last-child {
+        grid-column: span 2;
+        max-width: 50%;
+        margin: auto;
+    }
+
+    .journal-feature {
+        grid-template-columns: 1fr;
+    }
+
+    .journal-image {
+        height: 350px;
+    }
+
+    .fitness-topics {
+        grid-template-columns: 1fr;
+    }
+
+    .fitness-topic {
+        border-right: none;
+        border-bottom: 1px solid #d8e0e6;
+    }
+
+    .fitness-topic:last-child {
+        border-bottom: none;
+    }
+
+}
+@media (max-width: 600px) {
+    .news-section {
+        padding: 70px 5%;
+    }
+    .news-tittle {
+        font-size: 36px;
+    }
+    .news-cards {
+        grid-template-columns: 1fr;
+    }
+    .news-card:last-child {
+        grid-column: auto;
+        max-width: none;
+    }
+    .news-image-wrapper {
+        height: 230px;
+    }
+    .journal-section {
+        margin-top: 90px;
+    }
+    .journal-heading h2 {
+        font-size: 36px;
+    }
+    .journal-image {
+        height: 270px;
+    }
+    .journal-content {
+        padding: 40px 30px;
+    }
+    .journal-content h3 {
+        font-size: 30px;
+    }
+    .fitness-topic {
+        padding: 25px 20px;
+    }
+
+}
