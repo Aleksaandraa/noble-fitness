@@ -439,6 +439,128 @@ footer {
     color: black;
 }
 
+/* Cookie Consent - Noble Fitness */
+
+.cookie-banner {
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    width: 410px;
+    max-width: calc(100% - 50px);
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 25px;
+    background: #ffffff;
+    color: #102f4d;
+    border-radius: 16px;
+    border-top: 4px solid #257ede;
+    box-shadow: 0 10px 35px rgba(16, 47, 77, 0.25);
+    z-index: 2000;
+}
+
+.cookie-icon {
+    min-width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eef6ff;
+    color: #257ede;
+    border-radius: 12px;
+    font-size: 23px;
+}
+
+.cookie-content {
+    flex: 1;
+}
+
+.cookie-content h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #102f4d;
+}
+
+.cookie-content p {
+    margin-bottom: 10px;
+    font-size: 13px;
+    line-height: 1.7;
+    color: #687b8f;
+}
+
+.cookie-policy {
+    display: inline-block;
+    margin-bottom: 17px;
+    color: #257ede;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.cookie-policy:hover {
+    color: #102f4d;
+    text-decoration: underline;
+}
+
+.cookie-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.cookie-buttons button {
+    padding: 10px 14px;
+    border: 1px solid #257ede;
+    border-radius: 7px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#accept-cookies {
+    background: #257ede;
+    color: #ffffff;
+}
+
+#accept-cookies:hover {
+    background: #102f4d;
+    border-color: #102f4d;
+}
+
+#reject-cookies {
+    background: #ffffff;
+    color: #102f4d;
+}
+
+#reject-cookies:hover {
+    background: #eef6ff;
+}
+
+@media (max-width: 480px) {
+    .cookie-banner {
+        left: 12px;
+        bottom: 12px;
+        max-width: calc(100% - 24px);
+        padding: 18px;
+        gap: 12px;
+    }
+
+    .cookie-icon {
+        min-width: 35px;
+        height: 35px;
+        font-size: 18px;
+    }
+
+    .cookie-content h3 {
+        font-size: 17px;
+    }
+
+    .cookie-buttons button {
+        padding: 9px 10px;
+    }
+}
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
